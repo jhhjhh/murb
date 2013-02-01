@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title= title
+    meta(name="description", content="The most amazing site in the world.")
+    meta(name="viewport", content="width=device-width")
+    script(type="text/javascript", src="//use.typekit.net/vbl8arb.js")
+    script(type="text/javascript")
+      try{Typekit.load();}catch(e){}
+    != css('style')
+  body
+    header.header
+      h1 <span class="maximum">Maximum</span>Urbanism
+      ul.main-menu
+        li: a(href="#") Home
+        li: a(href="#") Dev
+        li: a(href="#") Stuff
+        li: a(href="#") Contact
+
+    block content
+
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+    script
+      | window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')

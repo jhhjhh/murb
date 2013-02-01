@@ -1,0 +1,44 @@
+@import 'libs/normalize'
+@import 'libs/h5top'
+@import 'nib'
+
+body
+  font-family "freight-sans-pro", "Lucida Grande", Helvetica, Arial, sans-serif
+  width 700px
+  margin 0 auto
+  padding 0 1em
+
+invisibleLink()
+  text-decoration none
+  color inherit
+
+.header
+  h1
+    color #171F3B
+    font-size 4em
+    line-height 0.9
+    font-weight 300
+    margin 0.2em 0 0 0
+    .maximum
+      color lighten(@color, 30%)
+
+.main-menu
+  list-style none
+  padding 0
+  li
+    display inline-block
+    padding 5px
+    &:first-of-type
+      padding-left 0
+    a
+      display block
+      background-color #222538
+      padding 0.5em 0.7em
+      invisibleLink()
+      text-transform uppercase
+      color white
+      transition background-color .3s cubic-bezier(0.23, 1, 0.32, 1)
+      &:hover
+        background-color #A40C0C
+
+@import 'libs/h5bottom'
